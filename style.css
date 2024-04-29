@@ -158,7 +158,7 @@ nav {
         margin-left: 50px;
     }
   }
-  @media (max-width: 858px){
+  @media (max-width: 900px){
     nav .logo{
         margin-top: 0px;
     }
