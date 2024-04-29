@@ -1,0 +1,310 @@
+:root {
+    --bg1:#fff;
+    --bg2:#d1d1d1;  
+    --bg3:#49575f;
+    --nav:#525252;
+    --text:#202020;
+    --accent1:#0004ff;
+    --accent2:rgb(21, 255, 0);
+    --accent3:#ff0000;
+    --white:#fff;
+    --glow:hsla(0, 0%, 100%, 0.75);
+    --transparent1:#525252a4
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--bg1);
+    font-family: Verdana, Arial, sans-serif;
+}
+h1{
+    padding-left: 10px;
+    color:var(--text);
+    text-decoration:none;
+    font-size:24px;
+}
+a.link, a.link:visited{
+    color:var(--accent2);
+    text-decoration:none;
+    transition: all 0.75s ease;
+}
+a.link:hover{
+    color:var(--accent1);
+}
+a.linkt, a.link:visited{
+    text-decoration:none;
+    transition: all 0.75s ease;
+}
+a.linkt:hover{
+    opacity: 80%;
+}
+#container-text-img{
+    margin:0px 10px;
+    height: auto;
+}
+#container-text{
+    
+    margin:0px 10px;
+}
+#container-text-right{
+    
+    float:right;
+    display: block;
+    width:69%;
+    height:100%;
+}
+#container-text-right h2{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--text);
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+#container-text p, #container-text-right p{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--text);
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    text-indent: 20px;
+}
+#container-img{
+    
+    margin:0;
+    width:30%;
+    float:left;
+    height: 100%;
+}
+#container-img img{
+    border:2px solid var(--accent1);
+    border-radius:10px;
+    width:90%;
+    margin:10px 5%;
+    transition: all 1s ease;
+}
+#container-img img:hover{
+    border:2px solid var(--text);
+}
+
+
+nav {
+    background-color: var(--nav);
+    height:150px;
+    width:100%;
+    align-content: center;
+  }
+  nav .logo{
+    line-height: 1600px;
+    height: 100px;
+    margin: 25 0 0 100px;
+    border-radius: 15px;
+    transition: all 1s ease;
+  }
+  nav .logo:hover{
+    filter: drop-shadow(0 0 10px var(--glow));
+  }
+  nav ul{
+    float: right;
+    margin:0px 20px 0px 0px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 150px;
+    margin:0 75px;
+    transition:all 1s ease;
+  }
+  nav ul li a, a:visited{
+    color:var(--white);
+    font-size: 18px;
+    /*text-transform: uppercase;*/
+    border-radius: 5px;
+    text-decoration: none;
+    transition:all 1s ease;
+  }
+  nav li:not(li.selected) a:hover{
+    filter: drop-shadow(0 0 5px var(--glow));
+  }
+  nav .checkbtn{
+    font-size: 40px;
+    color: var(--white);
+    float:right;
+    margin: 25px 25px 0 0;
+    cursor: pointer;
+    display: none;
+    transition: all .5s ease;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 1500px){
+    nav ul li{
+      margin:0 45px;
+    }
+  }
+  @media (max-width: 1250px){
+    nav ul li{
+      margin:0 25px;
+    }
+  }
+  @media (max-width: 952px){
+    nav ul li a, a:visited{
+      font-size: 16px;
+    }
+    nav .logo{
+        margin-left: 50px;
+    }
+  }
+  @media (max-width: 858px){
+    nav .logo{
+        margin-top: 0px;
+    }
+    nav{
+      position: relative;
+    }
+    nav .checkbtn{
+      display: block;
+    }
+    nav ul{
+      z-index: 1;
+      position: absolute;
+      width:100%;
+      top:150px;
+      left: -105%;
+      text-align: center;
+      transition: all .5s;
+      backdrop-filter: blur(5px);
+      background-color: var(--transparent1);
+      -moz-box-shadow: 5px 5px 15px rgba(0,0,0,.5);
+      -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,.5);
+      box-shadow: 4px 6px 15px rgba(0,0,0,.25);
+      clip-path: inset(0px -15px -15px 0px);
+    }
+    nav ul li{
+      display: block;
+      margin:50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background:none;
+    }
+    #check:checked ~ ul{
+      left:0;
+    }
+    #check:checked ~ .checkbtn{
+      filter: drop-shadow(0 0 5px var(--glow));
+      z-index: 2;
+    }
+  }
+
+#container-element{
+    overflow: hidden;
+    margin:0px 10px;
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.element{
+    float:left;
+    margin: 15px 15px;
+    border: 2px solid var(--accent1);
+    background-color: var(--bg2);
+    border-radius: 10px;
+    width:410px;
+    height:410px;
+}
+.element a img{
+    border:2px solid var(--bg2);
+    border-radius: 130px;
+    margin: 10px 75px;
+    width:250px;
+    height:250px;
+    padding: 5px;
+    transition: all 1.25s ease-in-out;
+}
+.element a:hover img{
+    border:2px solid var(--accent3);
+}
+.element h2{
+    color:var(--text);
+    text-align: center;
+    font-size: 18px;
+}
+.element p{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: var(--text);
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+.formular{
+    padding: 50px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formular label{
+    color:var(--text);
+}
+.formular input[type=text], textarea, select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--text);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.formular input[type=submit]{
+    background-color: #236c99;
+    color: var(--text);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.75s ease;
+}
+.formular input[type=submit]:hover{
+    background-color: #1a4c6b;
+}
+.harta{
+    display: block;
+    margin: 0px 25px;
+}
+iframe.map{
+    border: 2px solid var(--accent1);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+}
+table.vecini{
+    border-collapse: collapse;
+    margin: 50px 0px;
+    width: 100%;
+    border: 3px solid var(--accent3);
+    border-radius: 10px;
+}
+.vecini td, .vecini th {
+    padding: 8px;
+    color:var(--text);
+    border:1px solid var(--accent1);
+}
+.vecini tr{background-color: var(--bg3);}
+.vecini tr:nth-child(even){background-color: var(--bg2);}
+.vecini th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--accent3);
+    color: var(--bg3);
+}

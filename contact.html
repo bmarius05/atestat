@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" href="img/steag/steag50x50.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset = "utf-8" />
+        <title>România</title>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check"></input>
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars" id="checkbx"></i>
+            </label>
+            <img class="logo" src="img/steag/steag150x100.png"></img>
+            <ul>
+                <li><a href="./index.html">Acasă</a></li>
+                <li><a href="./atractii.php">Atracții</a></li>
+                <li><a href="./galerie">Galerie</a></li>
+                <li><a href="./orase">Orașe</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="formular">
+            <form action="./phpscript.php" method="post">
+                <label for="fname">Nume:</label>
+                <input type="text" id="fname" name="fname" placeholder="Numele tau" required>
+                <label for="prenume">Prenume:</label>
+                <input type="text" id="lname" name="lname" placeholder="Prenumele tau" required>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Emailul tau" required>
+                <label for="tip">Tip mesaj:</label>
+                <select id="tip" name="tip" required>
+                    <option value="r">Raportare Bug</option>
+                    <option value="s">Sugestie</option>
+                    <option value="a">Altele...</option>
+                </select>
+                <label for="mesaj">Mesaj</label>
+                <textarea id="mesaj" name="mesaj" placeholder="Mesajul tau" required maxlength="750"></textarea>
+                <input type="submit" value="Trimite">
+            </form>
+        </div>
+    </body>
+</html>
