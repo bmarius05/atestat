@@ -4,6 +4,9 @@
     --bg3:#49575f;
     --nav:#525252;
     --text:#202020;
+    --link:#ff0000;
+    --linkhover:#ff0000aa;
+    --linkvisited:#ff000022;
     --accent1:#0004ff;
     --accent2:rgb(21, 255, 0);
     --accent3:#ff0000;
@@ -25,20 +28,18 @@ h1{
     text-decoration:none;
     font-size:24px;
 }
-a.link, a.link:visited{
-    color:var(--accent2);
+a.link{
+    color:var(--link);
     text-decoration:none;
     transition: all 0.75s ease;
 }
 a.link:hover{
-    color:var(--accent1);
+    color:var(--linkhover);
 }
-a.linkt, a.link:visited{
+a.link:visited, a.link:active{
+    color:var(--linkvisited);
     text-decoration:none;
     transition: all 0.75s ease;
-}
-a.linkt:hover{
-    opacity: 80%;
 }
 #container-text-img{
     margin:0px 10px;
@@ -150,7 +151,7 @@ nav {
       margin:0 25px;
     }
   }
-  @media (max-width: 952px){
+  @media (max-width: 1000px){
     nav ul li a, a:visited{
       font-size: 16px;
     }
