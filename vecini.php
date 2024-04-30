@@ -13,12 +13,14 @@
                 <li class="selected"><a href="vecini.php">Vecini</a></li>
             </ul>
         </div>
-        
+        <form>
+            <input type=""></input>
+        </form>
         <table class="vecini">
         <?php
             echo "<tr>"."<th>"."Nume"."</th>"."<th>"."Populatie"."</th>"."</tr>";
             $sort=array("nume","nume DESC","populatie","populatie DESC");
-            $sortby=2;
+            $sortby=0;
             $conn =  mysqli_connect('localhost','root','DBPassword','users');
 			if($conn->connect_error){
 				echo "$conn->connect_error";

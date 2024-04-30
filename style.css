@@ -1,18 +1,20 @@
 :root {
-    --bg1:#fff;
+    --bg1: #d2d7e2;
     --bg2:#d1d1d1;  
     --bg3:#49575f;
-    --nav:#525252;
-    --text:#202020;
+    --nav:#4e5366;
+    --text:#22242c;
     --link:#ff0000;
-    --linkhover:#ff0000aa;
-    --linkvisited:#ff000022;
+    --link-hover:#ff0000aa;
+    --link-visited:#ff000022;
+    --imgborder:#7091E6;
+    --imgborder-hover:#3D52A0;
     --accent1:#0004ff;
     --accent2:rgb(21, 255, 0);
     --accent3:#ff0000;
     --white:#fff;
     --glow:hsla(0, 0%, 100%, 0.75);
-    --transparent1:#525252a4
+    --transparent1:#525252a4;
 }
 *{
     padding: 0;
@@ -22,6 +24,7 @@ body{
     background-color: var(--bg1);
     font-family: Verdana, Arial, sans-serif;
 }
+
 h1{
     padding-left: 10px;
     color:var(--text);
@@ -34,14 +37,15 @@ a.link{
     transition: all 0.75s ease;
 }
 a.link:hover{
-    color:var(--linkhover);
+    color:var(--link-hover);
+    filter: drop-shadow(0 0 5px var(--glow));
 }
 a.link:visited, a.link:active{
-    color:var(--linkvisited);
+    color:var(--link-visited);
     text-decoration:none;
     transition: all 0.75s ease;
 }
-#container-text-img{
+/* #container-text-img{
     margin:0px 10px;
     height: auto;
 }
@@ -89,8 +93,43 @@ a.link:visited, a.link:active{
 }
 #container-img img:hover{
     border:2px solid var(--text);
+} */
+
+/* Atractie */
+
+.atractie{
+  padding: 10px;
+  margin:5px 10px;
+  overflow: hidden;
+  display: flexbox;
+}
+.atractie h2{
+  text-decoration: underline;
+  color:var(--text);
+  margin: 10px;
+}
+.atractie p{
+  size: 18px;
+  text-indent: 15px;
+  margin: 10px 0;
+  color:var(--text);
+}
+.atractie img{
+  border: 3px solid var(--imgborder);
+  border-radius: 15px;
+  margin: 10px 25%;
+  padding: 0;
+  width: 50%;
+  aspect-ratio: 16/9;
+  transition: all .75s ease-in-out;
+}
+.atractie img:hover{
+  border: 3px solid var(--imgborder-hover);
+  filter: drop-shadow(0 0 5px var(--imgborder-hover));
+  border-radius: 20px;
 }
 
+/* Nav */
 
 nav {
     background-color: var(--nav);
