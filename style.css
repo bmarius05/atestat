@@ -131,19 +131,19 @@ a.link:hover{
   filter: drop-shadow(0 0 5px var(--imgborder-hover));
   border-radius: 20px;
 }
-@media (max-width:1500px){
+@media only screen and (max-width:1500px){
   .atractie{
     padding: 10px;
     margin:5px 250px;
   }
 }
-@media (max-width:1250px){
+@media only screen and (max-width:1250px){
   .atractie{
     padding: 10px;
     margin:5px 100px;
   }
 }
-@media (max-width:900px) {
+@media only screen and (max-width:900px) {
   .atractie{
     padding: 10px;
     margin:5px 10px;
@@ -225,17 +225,17 @@ nav {
   #check{
     display: none;
   }
-  @media (max-width: 1500px){
+  @media only screen and (max-width: 1500px){
     nav ul li{
       margin:0 45px;
     }
   }
-  @media (max-width: 1250px){
+  @media only screen and (max-width: 1250px){
     nav ul li{
       margin:0 25px;
     }
   }
-  @media (max-width: 1000px){
+  @media only screen and (max-width: 1000px){
     nav ul li a, a:visited{
       font-size: 16px;
     }
@@ -243,7 +243,7 @@ nav {
         margin-left: 50px;
     }
   }
-  @media (max-width: 900px){
+  @media only screen and (max-width: 900px){
     nav .logo{
         margin-top: 0px;
     }
