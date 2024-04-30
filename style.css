@@ -103,6 +103,7 @@ a.link:hover{
   background: var(--bgatractie);
   border-radius: 20px;
   filter: drop-shadow(5px 5px 5px var(--border));
+  transition: all 1s ease-in-out;
 }
 .atractie h2{
   text-decoration: underline;
@@ -131,6 +132,12 @@ a.link:hover{
   border-radius: 20px;
 }
 @media (max-width:1500px){
+  .atractie{
+    padding: 10px;
+    margin:5px 250px;
+  }
+}
+@media (max-width:1250px){
   .atractie{
     padding: 10px;
     margin:5px 100px;
@@ -184,10 +191,6 @@ nav {
     height: 100px;
     margin: 25 0 0 100px;
     border-radius: 15px;
-    transition: all 1s ease;
-  }
-  nav .logo:hover{
-    filter: drop-shadow(0 0 10px var(--glow));
   }
   nav ul{
     float: right;
@@ -358,6 +361,27 @@ nav {
 .formular input[type=submit]:hover{
     background-color: #1a4c6b;
 }
+table.vecini{
+  border-collapse: collapse;
+  margin: 50px 0px;
+  width: 100%;
+  border: 3px solid var(--accent3);
+  border-radius: 10px;
+}
+.vecini td, .vecini th {
+  padding: 8px;
+  color:var(--text);
+  border:1px solid var(--accent1);
+}
+.vecini tr{background-color: var(--bg3);}
+.vecini tr:nth-child(even){background-color: var(--bg2);}
+.vecini th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--accent3);
+  color: var(--bg3);
+} */
 .harta{
     display: block;
     margin: 0px 25px;
@@ -369,24 +393,3 @@ iframe.map{
     height: auto;
     min-height: 400px;
 }
-table.vecini{
-    border-collapse: collapse;
-    margin: 50px 0px;
-    width: 100%;
-    border: 3px solid var(--accent3);
-    border-radius: 10px;
-}
-.vecini td, .vecini th {
-    padding: 8px;
-    color:var(--text);
-    border:1px solid var(--accent1);
-}
-.vecini tr{background-color: var(--bg3);}
-.vecini tr:nth-child(even){background-color: var(--bg2);}
-.vecini th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: var(--accent3);
-    color: var(--bg3);
-} */
