@@ -370,11 +370,16 @@ table.oras{
 }
 .oras td, .oras th {
   padding: 8px;
-  color:var(--text);
   border:1px solid var(--accent1);
 }
-.oras tr{background-color: var(--bg3);}
-.oras tr:nth-child(even){background-color: var(--bg2);}
+.oras tr{
+  background-color: var(--bg3);
+  color:#fff;
+}
+.oras tr:nth-child(even){
+  background-color: var(--bg2);
+  color:var(--text);
+}
 .oras th {
   padding-top: 12px;
   padding-bottom: 12px;

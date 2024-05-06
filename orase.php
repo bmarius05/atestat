@@ -1,6 +1,6 @@
 <html lang="ro">
     <head>
-        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
         <link rel="icon" href="img/steag/steag50x50.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset = "utf-8" />
