@@ -42,7 +42,7 @@ a.link:hover{
     color: var(--linkhover);
     filter: drop-shadow(0 0 5px var(--linkhover));
 }
-/* #container-text-img{
+/**/ #container-text-img{
     margin:0px 10px;
     height: auto;
 }
@@ -90,7 +90,7 @@ a.link:hover{
 }
 #container-img img:hover{
     border:2px solid var(--text);
-} */
+} /**/
 
 /* Atractie */
 
@@ -288,7 +288,7 @@ nav {
     }
   }
 
-/* #container-element{
+/**/ #container-element{
     overflow: hidden;
     margin:0px 10px;
     height: auto;
@@ -360,28 +360,28 @@ nav {
 }
 .formular input[type=submit]:hover{
     background-color: #1a4c6b;
-}
-table.vecini{
+}/**/
+table.oras{
   border-collapse: collapse;
   margin: 50px 0px;
   width: 100%;
   border: 3px solid var(--accent3);
   border-radius: 10px;
 }
-.vecini td, .vecini th {
+.orase td, .orase th {
   padding: 8px;
   color:var(--text);
   border:1px solid var(--accent1);
 }
-.vecini tr{background-color: var(--bg3);}
-.vecini tr:nth-child(even){background-color: var(--bg2);}
-.vecini th {
+.orase tr{background-color: var(--bg3);}
+.orase tr:nth-child(even){background-color: var(--bg2);}
+.orase th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
   background-color: var(--accent3);
   color: var(--bg3);
-} */
+}
 .harta{
     display: block;
     margin: 0px 25px;
