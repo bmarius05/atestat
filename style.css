@@ -368,14 +368,14 @@ table.oras{
   border: 3px solid var(--accent3);
   border-radius: 10px;
 }
-.orase td, .orase th {
+.oras td, .oras th {
   padding: 8px;
   color:var(--text);
   border:1px solid var(--accent1);
 }
-.orase tr{background-color: var(--bg3);}
-.orase tr:nth-child(even){background-color: var(--bg2);}
-.orase th {
+.oras tr{background-color: var(--bg3);}
+.oras tr:nth-child(even){background-color: var(--bg2);}
+.oras th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;

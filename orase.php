@@ -23,6 +23,7 @@
         </nav>
         <table class="oras">
             <?php
+                $nrmax=50;
                 $sort=array("nume","nume DESC","judet","judet DESC","populatie","populatie DESC","an","an DESC");
                 $sortby=5;
                 $conn =  mysqli_connect('localhost','root','DBPassword','atestat');
@@ -35,14 +36,16 @@
                         echo "Nu exista date";
                     }
                     else{
+                        $i=1;
                         echo "<tr>"."<th>"."Nume"."</th>"."<th>"."Judet"."</th>"."<th>"."Populatie"."</th>"."<th>"."Anul atestării"."</th>"."</tr>";
-                        while($row = mysqli_fetch_array($tabel)){
+                        while(($row = mysqli_fetch_array($tabel))&&$i<=$nrmax){
                             echo "<tr>"."<td>";
                             if($row['link'])
                                 echo"<a class=\"link\" href=\"".($row['link'])."\">".($row['nume'])."</a>";
                             else
                                 echo ($row['nume']);
                             echo"</td>"."<td>".($row['judet'])."</td>"."<td>".($row['populatie'])."</td>"."<td>".($row['an'])."</td>"."</tr>";
+                            $i++;
                         }
                         $tabel->close();
                     }

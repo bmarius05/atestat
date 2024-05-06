@@ -21,12 +21,12 @@
             echo "<tr>"."<th>"."Nume"."</th>"."<th>"."Populatie"."</th>"."</tr>";
             $sort=array("nume","nume DESC","populatie","populatie DESC");
             $sortby=0;
-            $conn =  mysqli_connect('localhost','root','DBPassword','users');
+            $conn =  mysqli_connect('localhost','root','DBPassword','atestat');
 			if($conn->connect_error){
 				echo "$conn->connect_error";
 				die("Conexiune esuata: ". $conn->connect_error);
 			} else {
-				$tabel=$conn->execute_query("select * from vecini order by $sort[$sortby];");
+				$tabel=$conn->execute_query("select * from orase order by $sort[$sortby];");
 				if($tabel->num_rows < 1) {
 					echo "Nu exista date";
 				}
