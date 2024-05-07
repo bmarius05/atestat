@@ -24,8 +24,8 @@
         <table class="oras">
             <?php
                 $start=1;
-                $nrmax=50;
-                $sort=array("nume","nume DESC","judet","judet DESC","populatie","populatie DESC","an","an DESC");
+                $nrmax=350;
+                $sort=array("nume","nume DESC","judet,populatie DESC","judet DESC,populatie DESC","populatie","populatie DESC","an","an DESC");
                 
                 $conn =  mysqli_connect('localhost','root','DBPassword','atestat');
                 if(array_key_exists('nume', $_POST)) { 

@@ -145,10 +145,13 @@ a.link:hover{
 }
 @media only screen and (max-width:900px) {
   .atractie{
-    padding: 10px;
-    margin:5px 10px;
+    padding: 0 10px;
+    margin:0px 10px;
     overflow: hidden;
     display: flexbox;
+    border: none;
+    background: none;
+    filter: none;
   }
   .atractie h2{
     text-decoration: underline;
@@ -165,9 +168,9 @@ a.link:hover{
   .atractie img{
     border: 3px solid var(--imgborder);
     border-radius: 15px;
-    margin: 10px 25%;
+    margin: 10px 15%;
     padding: 0;
-    width: 50%;
+    width: 70%;
     aspect-ratio: 16/9;
     transition: all .75s ease-in-out;
   }
@@ -365,12 +368,12 @@ table.oras{
   border-collapse: collapse;
   margin: 50px 0px;
   width: 100%;
-  border: 3px solid var(--accent3);
+  border: 3px solid #1a4c6b;
   border-radius: 10px;
 }
 .oras td{
   padding: 8px;
-  border:1px solid var(--accent1);
+  border:1px solid #1a4c6b;
 }
 .oras tr{
   background-color: var(--bg3);
@@ -383,8 +386,9 @@ table.oras{
 .oras th {
   width: 25%;
   text-align: left;
-  background-color: var(--accent3);
+  background-color: var(--bg3);
   color: var(--bg3);
+  border:1px solid #1a4c6b;
 }
 .oras i{
   color:white;
@@ -403,6 +407,7 @@ table.oras{
   background: none;
   color:white;
   height: 100%;
+  cursor:pointer;
 }
 .harta{
     display: block;
