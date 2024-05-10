@@ -364,12 +364,41 @@ nav {
 .formular input[type=submit]:hover{
     background-color: #1a4c6b;
 }/**/
-table.oras{
+
+.oras{
+  padding: 10px;
+  margin:25px 400px;
+  overflow: hidden;
+  display: flexbox;
+  border:5px solid var(--border);
+  background: var(--bgatractie);
+  border-radius: 20px;
+  filter: drop-shadow(5px 5px 5px var(--border));
+  transition: all 1s ease-in-out;
+}
+@media only screen and (max-width:1500px){
+  .oras{
+    padding: 10px;
+    margin:5px 250px;
+  }
+}
+@media only screen and (max-width:1250px){
+  .oras{
+    padding: 10px;
+    margin:5px 100px;
+  }
+}
+@media only screen and (max-width:900px) {
+  .oras{
+    padding: 0 10px;
+    margin:0px 10px;
+  }
+}
+.oras table{
   border-collapse: collapse;
-  margin: 50px 0px;
   width: 100%;
   border: 3px solid #1a4c6b;
-  border-radius: 10px;
+  border-radius: 100px;
 }
 .oras td{
   padding: 8px;
