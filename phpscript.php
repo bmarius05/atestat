@@ -5,21 +5,20 @@
         <title>Our Solar System</title>
     </head>
 	<body>
-		<div class="menu">
+	<nav>
+            <input type="checkbox" id="check"></input>
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars" id="checkbx"></i>
+            </label>
+            <img class="logo" src="img/steag/steag150x100.png"></img>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sun.html">Sun</a></li>
-                <li><a href="mercury.html">Mercury</a></li>
-                <li><a href="venus.html">Venus</a></li>
-                <li><a href="earth.html">Earth</a></li>
-                <li><a href="mars.html">Mars</a></li>
-                <li><a href="jupiter.html">Jupiter</a></li>
-                <li><a href="saturn.html">Saturn</a></li>
-                <li><a href="uranus.html">Uranus</a></li>
-                <li><a href="neptune.html">Neptune</a></li>
-                <li class="selected"><a href="contact.html">Contact</a></li>
+                <li><a href="./index.html">Acasă</a></li>
+                <li><a href="./atractii.html">Atracții</a></li>
+                <li><a href="./galerie.html">Galerie</a></li>
+                <li><a href="./orase.php">Orașe</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
-        </div>
+        </nav>
 		<h1>
 			<?php
 				$firstName = $_POST['fname'];
@@ -32,7 +31,7 @@
 					echo "Email invalid";
 				}else{
 					// Database connection
-					$conn =  mysqli_connect('localhost','root','DBPassword','users');
+					$conn =  mysqli_connect('localhost','root','DBPassword','atestat');
 					if($conn->connect_error){
 						echo "$conn->connect_error";
 						die("Conexiune esuata: ". $conn->connect_error);

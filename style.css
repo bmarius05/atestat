@@ -42,7 +42,7 @@ a.link:hover{
     color: var(--linkhover);
     filter: drop-shadow(0 0 5px var(--linkhover));
 }
-/**/ #container-text-img{
+/* #container-text-img{
     margin:0px 10px;
     height: auto;
 }
@@ -291,7 +291,7 @@ nav {
     }
   }
 
-/**/ #container-element{
+/* #container-element{
     overflow: hidden;
     margin:0px 10px;
     height: auto;
@@ -332,12 +332,42 @@ nav {
     font-family: Verdana, Arial, sans-serif;
     font-size: 12px;
     text-align: center;
-}
+}*/
 .formular{
-    padding: 50px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+    margin:25px 400px;
+    overflow: hidden;
+    border:5px solid var(--border);
+    background: var(--bgatractie);
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 5px var(--border));
+    transition: all 1s ease-in-out;
+}
+@media only screen and (max-width:1500px){
+  .formular{
+    padding: 10px;
+    margin:5px 250px;
+  }
+}
+@media only screen and (max-width:1250px){
+  .formular{
+    padding: 10px;
+    margin:5px 100px;
+  }
+}
+@media only screen and (max-width:900px) {
+  .formular{
+    padding: 10px 10px;
+    margin:0px 10px;
+    overflow: hidden;
+    display: flexbox;
+    border: none;
+    background: none;
+    filter: none;
+  }
 }
 .formular label{
     color:var(--text);
@@ -443,9 +473,15 @@ nav {
     margin: 0px 25px;
 }
 iframe.map{
-    border: 2px solid var(--accent1);
-    border-radius: 10px;
+    border: 2px solid var(--imgborder);
+    border-radius: 15px;
     width: 100%;
     height: auto;
     min-height: 400px;
+    transition: all .75s ease-in-out;
+}
+iframe.map:hover{
+  border: 2px solid var(--imgborder-hover);
+  filter: drop-shadow(0 0 5px var(--imgborder-hover));
+  border-radius: 20px;
 }

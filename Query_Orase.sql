@@ -10,8 +10,24 @@ CREATE TABLE `orase` (
 
 ALTER TABLE `orase`
   ADD PRIMARY KEY (`id`) USING BTREE;
+ALTER TABLE `orase`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `fname` varchar(30) NOT NULL,
+  `lname` varchar(30) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `tip` char(1) NOT NULL,
+  `mesaj` varchar(255) NOT NULL,
+  `data_inreg` datetime NOT NULL DEFAULT current_timestamp(),
+  `activa` tinyint(1) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 INSERT INTO `orase` (`nume`, `judet`, `populatie`, `an`) VALUES
 ('București','-','1716961','1459'),
@@ -340,4 +356,8 @@ select * from orase;
 
 ALTER TABLE orase AUTO_INCREMENT=1;
 
+ALTER TABLE users AUTO_INCREMENT=1;
+
 DELETE from orase;
+
+SELECT * from users;
