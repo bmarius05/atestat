@@ -373,6 +373,23 @@ nav {
 .formular label{
     color:var(--text);
 }
+.formular p{
+  color:var(--text);
+}
+.formular a{
+  background-color: #236c99;
+    color: var(--white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.75s ease;
+    text-decoration: none;
+}
+.formular a:hover{
+  background-color: #1a4c6b;
+  filter: drop-shadow(0 0 5px #1a4c6b);
+}
 .formular input[type=text], textarea, select{
     width: 100%;
     padding: 12px;
@@ -385,7 +402,7 @@ nav {
 }
 .formular input[type=submit]{
     background-color: #236c99;
-    color: var(--text);
+    color: var(--white);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -394,6 +411,7 @@ nav {
 }
 .formular input[type=submit]:hover{
     background-color: #1a4c6b;
+    filter: drop-shadow(0 0 5px #1a4c6b);
 }/**/
 
 .oras{

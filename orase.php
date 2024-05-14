@@ -28,7 +28,7 @@
                     $nrmax=350;
                     $sort=array("nume","nume DESC","judet,populatie DESC","judet DESC,populatie DESC","populatie","populatie DESC","an","an DESC");
                     
-                    $conn =  mysqli_connect('localhost','root','DBPassword','atestat');
+                    $conn =  mysqli_connect('localhost','root','','atestat');
                     if(array_key_exists('nume', $_POST)) { 
                         $sortby=0;
                     }else if(array_key_exists('numeD', $_POST)) { 
