@@ -27,7 +27,13 @@ body{
     font-family: Verdana, Arial, sans-serif;
 }
 
-
+p{
+  width: 100%;
+  size: 18px;
+  text-indent: 15px;
+  margin: 10px 0;
+  color:var(--text);
+}
 h1{
     padding-left: 10px;
     color:var(--text);
@@ -414,7 +420,7 @@ nav {
     filter: drop-shadow(0 0 5px #1a4c6b);
 }/**/
 
-.oras{
+.continut{
   padding: 10px;
   margin:25px 400px;
   overflow: hidden;
@@ -426,55 +432,60 @@ nav {
   transition: all 1s ease-in-out;
 }
 @media only screen and (max-width:1500px){
-  .oras{
+  .continut{
     padding: 10px;
     margin:5px 250px;
   }
 }
 @media only screen and (max-width:1250px){
-  .oras{
+  .continut{
     padding: 10px;
     margin:5px 100px;
   }
 }
 @media only screen and (max-width:900px) {
-  .oras{
+  .continut{
     padding: 0 10px;
     margin:0px 10px;
+    overflow: hidden;
+    display: flexbox;
+    border: none;
+    background: none;
+    filter: none;
   }
 }
-.oras table{
+table.orase{
   border-collapse: collapse;
   width: 100%;
   border: 3px solid #1a4c6b;
   border-radius: 100px;
 }
-.oras td{
+.orase td{
   padding: 8px;
   border:1px solid #1a4c6b;
 }
-.oras tr{
+.orase tr{
   background-color: var(--bg3);
   color:#fff;
 }
-.oras tr:nth-child(even){
+.orase tr:nth-child(even){
   background-color: var(--bg2);
   color:var(--text);
 }
-.oras th {
+.orase th {
   width: 25%;
   text-align: left;
   background-color: var(--bg3);
   color: var(--bg3);
   border:1px solid #1a4c6b;
 }
-.oras i{
+.orase i{
   color:white;
   margin-left: -25px;
   font-size: 20px;
   z-index: 1;
 }
-.oras input{
+.orase input{
   width: 100%;
   z-index: 0;
   font-size: 20px;

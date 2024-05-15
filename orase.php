@@ -7,7 +7,7 @@
         <title>România</title>
     </head>
     <body>
-        <nav>
+    <nav>
             <input type="checkbox" id="check"></input>
             <label for="check" class="checkbtn">
                 <i class="fa fa-bars" id="checkbx"></i>
@@ -16,13 +16,13 @@
             <ul>
                 <li><a href="./index.html">Acasă</a></li>
                 <li><a href="./atractii.html">Atracții</a></li>
-                <li><a href="./galerie.html">Galerie</a></li>
                 <li><a href="./orase.php">Orașe</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="oras">
-            <table>
+        <div class="continut">
+            <p>Tabelul următor conține date despre cele mai importante orașe din România</p>
+            <table class="orase">
                 <?php
                     $start=1;
                     $nrmax=350;
