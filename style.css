@@ -195,6 +195,7 @@ nav {
     height:150px;
     width:100%;
     align-content: center;
+    filter:drop-shadow(0 0 10px var(--nav));
   }
   nav .logo{
     line-height: 1600px;
@@ -292,6 +293,9 @@ nav {
     #check:checked ~ ul{
       left:0;
     }
+    #check:checked ~ nav{
+      filter:drop-shadow(0 0 50px var(--nav));
+    }
     #check:checked ~ .checkbtn{
       filter: drop-shadow(0 0 5px var(--glow));
       z-index: 2;
@@ -341,9 +345,9 @@ nav {
     text-align: center;
 }*/
 .formular{
-    display: flex;
     align-items: center;
     justify-content: center;
+    align-self: center;
     padding: 10px;
     margin:25px 400px;
     overflow: hidden;
