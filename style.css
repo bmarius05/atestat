@@ -11,7 +11,7 @@
     --bgatractie:#c1c8d1;
     --border:#697079;
 
-    --accent1:#0004ff;
+    --accent1:#00ff22;
     --accent2:rgb(21, 255, 0);
     --accent3:#ff0000;
     --white:#fff;
@@ -24,18 +24,18 @@
 }
 body{
     background-color: var(--bg1);
-    font-family: Verdana, Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p{
   width: 100%;
   size: 18px;
   text-indent: 15px;
-  margin: 10px 0;
+  margin: 10px 15px;
   color:var(--text);
 }
 h1{
-    padding-left: 10px;
+    margin: 10px 15px;
     color:var(--text);
     text-decoration:none;
     font-size:24px;
@@ -115,13 +115,13 @@ a.link:hover{
 .atractie h2{
   text-decoration: underline;
   color:var(--text);
-  margin: 10px;
+  margin: 10px 15px;
 }
 .atractie p{
   width: 100%;
   size: 18px;
   text-indent: 15px;
-  margin: 10px 0;
+  margin: 10px 15px;
   color:var(--text);
 }
 .atractie img{
@@ -202,6 +202,7 @@ nav {
     height: 100px;
     margin: 25 0 0 100px;
     border-radius: 15px;
+    position:absolute;
   }
   nav ul{
     float: right;
@@ -215,7 +216,7 @@ nav {
   }
   nav ul li a, a:visited{
     color:var(--white);
-    font-size: 18px;
+    font-size: 24px;
     /*text-transform: uppercase;*/
     border-radius: 5px;
     text-decoration: none;
@@ -386,8 +387,9 @@ nav {
 .formular p{
   color:var(--text);
 }
-.formular a{
+.formular .back{
   background-color: #236c99;
+    margin: 10px;
     color: var(--white);
     padding: 12px 20px;
     border: none;
@@ -396,7 +398,7 @@ nav {
     transition: all 0.75s ease;
     text-decoration: none;
 }
-.formular a:hover{
+.formular .back:hover{
   background-color: #1a4c6b;
   filter: drop-shadow(0 0 5px #1a4c6b);
 }
@@ -458,11 +460,17 @@ nav {
     filter: none;
   }
 }
+p.center{
+  padding: 0;
+  margin:25px 0;
+  text-align: center;
+}
 table.orase{
+  margin: 20px 5%;
+  justify-self: center;
   border-collapse: collapse;
-  width: 100%;
+  width: 90%;
   border: 3px solid #1a4c6b;
-  border-radius: 100px;
 }
 .orase td{
   padding: 8px;
@@ -507,7 +515,7 @@ table.orase{
     margin: 0px 25px;
 }
 iframe.map{
-    border: 2px solid var(--imgborder);
+    border: 3px solid var(--imgborder);
     border-radius: 15px;
     width: 100%;
     height: auto;
@@ -515,7 +523,7 @@ iframe.map{
     transition: all .75s ease-in-out;
 }
 iframe.map:hover{
-  border: 2px solid var(--imgborder-hover);
+  border: 3px solid var(--imgborder-hover);
   filter: drop-shadow(0 0 5px var(--imgborder-hover));
   border-radius: 20px;
 }

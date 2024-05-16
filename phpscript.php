@@ -20,7 +20,6 @@
             </ul>
         </nav>
 		<div class="formular">
-
 			<p>
 				<?php
 					$firstName = $_POST['fname'];
@@ -51,6 +50,7 @@
 								echo "Inregistrare reusita...";
 								echo "Id-ul dumneavoastra este:#";
 								echo $row['id'];
+								echo "</p><p>Vă mulțumim pentru vizită și pentru interesul acordat!";
 								$stmt->close();
 							}
 							$verif->close();
@@ -59,7 +59,7 @@
 					}
 				?>
 			</p>
-			<a href="javascript:history.back()">Inapoi</a>
+			<input type="submit" value="Inapoi" onclick="javascript:history.back()">
 		</div>
 	</body>
 </html>

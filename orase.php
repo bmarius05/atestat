@@ -21,11 +21,11 @@
             </ul>
         </nav>
         <div class="continut">
-            <p>Tabelul următor conține date despre cele mai importante orașe din România</p>
+            <p class="center">Tabelul următor conține date despre cele mai importante orașe din România</p>
             <table class="orase">
                 <?php
                     $start=1;
-                    $nrmax=350;
+                    $nrmax=25;
                     $sort=array("nume","nume DESC","judet,populatie DESC","judet DESC,populatie DESC","populatie","populatie DESC","an","an DESC");
                     
                     $conn =  mysqli_connect('localhost','root','','atestat');
