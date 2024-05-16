@@ -527,3 +527,6 @@ iframe.map:hover{
   filter: drop-shadow(0 0 5px var(--imgborder-hover));
   border-radius: 20px;
 }
+audio {
+  margin-left: 15px;
+}
