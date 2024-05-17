@@ -27,7 +27,7 @@
 					$email = $_POST['email'];
 					$tip = $_POST['tip'];
 					$mesaj = $_POST['mesaj'];
-		
+
 					if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 						echo "Email invalid";
 					}else{
@@ -50,7 +50,7 @@
 								echo "Inregistrare reusita...";
 								echo "Id-ul dumneavoastra este:#";
 								echo $row['id'];
-								echo "</p><p>Vă mulțumim pentru vizită și pentru interesul acordat!";
+								echo "</p><p>Vă mulțumim pentru mesaj!";
 								$stmt->close();
 							}
 							$verif->close();
