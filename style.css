@@ -49,55 +49,7 @@ a.link:hover{
     color: var(--linkhover);
     filter: drop-shadow(0 0 5px var(--linkhover));
 }
-/* #container-text-img{
-    margin:0px 10px;
-    height: auto;
-}
-#container-text{
-    
-    margin:0px 10px;
-}
-#container-text-right{
-    
-    float:right;
-    display: block;
-    width:69%;
-    height:100%;
-}
-#container-text-right h2{
-    padding-left: 10px;
-    padding-right: 10px;
-    color: var(--text);
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 18px;
-    text-align: justify;
-}
-#container-text p, #container-text-right p{
-    padding-left: 10px;
-    padding-right: 10px;
-    color: var(--text);
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 14px;
-    text-align: justify;
-    text-indent: 20px;
-}
-#container-img{
-    
-    margin:0;
-    width:30%;
-    float:left;
-    height: 100%;
-}
-#container-img img{
-    border:2px solid var(--accent1);
-    border-radius:10px;
-    width:90%;
-    margin:10px 5%;
-    transition: all 1s ease;
-}
-#container-img img:hover{
-    border:2px solid var(--text);
-} /**/
+
 
 /* Atractie */
 
@@ -141,19 +93,19 @@ a.link:hover{
 @media only screen and (max-width:1500px){
   .atractie{
     padding: 10px;
-    margin:5px 250px;
+    margin:15px 250px;
   }
 }
 @media only screen and (max-width:1250px){
   .atractie{
     padding: 10px;
-    margin:5px 100px;
+    margin:15px 100px;
   }
 }
 @media only screen and (max-width:900px) {
   .atractie{
     padding: 0 10px;
-    margin:0px 10px;
+    margin:5px 10px;
     overflow: hidden;
     display: flexbox;
     border: none;
@@ -222,7 +174,7 @@ nav {
     text-decoration: none;
     transition:all 1s ease;
   }
-  nav li:not(li.selected) a:hover{
+  nav li a:hover{
     filter: drop-shadow(0 0 5px var(--glow));
   }
   nav .checkbtn{
@@ -257,7 +209,7 @@ nav {
   }
   @media only screen and (max-width: 900px){
     nav .logo{
-        margin-top: 0px;
+        margin-top: -18px;
     }
     nav{
       position: relative;
@@ -302,49 +254,6 @@ nav {
       z-index: 2;
     }
   }
-
-/* #container-element{
-    overflow: hidden;
-    margin:0px 10px;
-    height: auto;
-    display: block;
-    align-items: center;
-    justify-content: center;
-}
-.element{
-    float:left;
-    margin: 15px 15px;
-    border: 2px solid var(--accent1);
-    background-color: var(--bg2);
-    border-radius: 10px;
-    width:410px;
-    height:410px;
-}
-.element a img{
-    border:2px solid var(--bg2);
-    border-radius: 130px;
-    margin: 10px 75px;
-    width:250px;
-    height:250px;
-    padding: 5px;
-    transition: all 1.25s ease-in-out;
-}
-.element a:hover img{
-    border:2px solid var(--accent3);
-}
-.element h2{
-    color:var(--text);
-    text-align: center;
-    font-size: 18px;
-}
-.element p{
-    padding-left: 15px;
-    padding-right: 15px;
-    color: var(--text);
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 12px;
-    text-align: center;
-}*/
 .formular{
     align-items: center;
     justify-content: center;
@@ -361,19 +270,19 @@ nav {
 @media only screen and (max-width:1500px){
   .formular{
     padding: 10px;
-    margin:5px 250px;
+    margin:15px 250px;
   }
 }
 @media only screen and (max-width:1250px){
   .formular{
     padding: 10px;
-    margin:5px 100px;
+    margin:15px 100px;
   }
 }
 @media only screen and (max-width:900px) {
   .formular{
     padding: 10px 10px;
-    margin:0px 10px;
+    margin:10px 10px;
     overflow: hidden;
     display: flexbox;
     border: none;
@@ -440,19 +349,19 @@ nav {
 @media only screen and (max-width:1500px){
   .continut{
     padding: 10px;
-    margin:5px 250px;
+    margin:15px 250px;
   }
 }
 @media only screen and (max-width:1250px){
   .continut{
     padding: 10px;
-    margin:5px 100px;
+    margin:15px 100px;
   }
 }
 @media only screen and (max-width:900px) {
   .continut{
     padding: 0 10px;
-    margin:0px 10px;
+    margin:10px 10px 0 20px;
     overflow: hidden;
     display: flexbox;
     border: none;
