@@ -20,7 +20,7 @@
             </ul>
         </nav>
 		<div class="formular">
-			<p>
+			<p class="center">
 				<?php
 					$firstName = $_POST['fname'];
 					$lastName = $_POST['lname'];
@@ -59,7 +59,8 @@
 					}
 				?>
 			</p>
-			<input type="submit" value="Inapoi" onclick="javascript:history.back()">
+			<p class="center">
+			<input type="submit" value="Inapoi" onclick="javascript:history.back()"></p>
 		</div>
 	</body>
 </html>
