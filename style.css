@@ -97,24 +97,25 @@ a.link:hover{
 }
 @media only screen and (max-width:900px) {
   .atractie{
-    padding: 0 10px;
+    border:none;
+    padding: 0px 10px;
     margin:5px 10px;
     overflow: hidden;
     display: flexbox;
-    border: none;
     background: none;
     filter: none;
   }
   .atractie h2{
     text-decoration: underline;
     color:var(--text);
-    margin: 10px;
+    margin: 20px;
+    margin-bottom: 5px;
   }
   .atractie p{
     width: 100%;
     size: 18px;
     text-indent: 15px;
-    margin: 10px 0;
+    margin: 5px 25px;
     color:var(--text);
   }
   .atractie img{
@@ -423,9 +424,20 @@ iframe.map{
     border: 3px solid var(--imgborder);
     border-radius: 15px;
     width: 100%;
+    aspect-ratio: 16/9;
     height: auto;
     min-height: 400px;
     transition: all .75s ease-in-out;
+}
+@media only screen and (max-width:900px) {
+  iframe.map{
+    border: 3px solid var(--imgborder);
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    transition: all .75s ease-in-out;
+}
 }
 iframe.map:hover{
   border: 3px solid var(--imgborder-hover);
