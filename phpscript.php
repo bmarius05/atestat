@@ -50,7 +50,11 @@
 								echo "Inregistrare reusita...";
 								echo "Id-ul dumneavoastra este:#";
 								echo $row['id'];
+<<<<<<< HEAD
 								echo "</p><p class=\"center\">Vă mulțumim pentru mesaj!";
+=======
+								echo "</p><p>Vă mulțumim pentru mesaj!";
+>>>>>>> fd27d9761c98072c5fb494e449bb60e47ecd003b
 								$stmt->close();
 							}
 							$verif->close();
