@@ -20,14 +20,14 @@
             </ul>
         </nav>
 		<div class="formular">
-			<p>
+			<p class="center">
 				<?php
 					$firstName = $_POST['fname'];
 					$lastName = $_POST['lname'];
 					$email = $_POST['email'];
 					$tip = $_POST['tip'];
 					$mesaj = $_POST['mesaj'];
-		
+
 					if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 						echo "Email invalid";
 					}else{
@@ -37,7 +37,7 @@
 							echo "$conn->connect_error";
 							die("Conexiune esuata: ". $conn->connect_error);
 						} else {
-							$verif=$conn->execute_query("select * from users where email='$email' and activa=1;");
+							$verif=$conn->execute_query("select * from users where email='$email';");
 							if($verif->num_rows == 1) {
 								echo "Acest Email este deja inregistrat";
 							}
@@ -45,12 +45,12 @@
 								$stmt = $conn->prepare("insert into users(fname, lname, email, tip, mesaj) values(?, ?, ?, ?, ?)");
 								$stmt->bind_param("sssss", $firstName, $lastName, $email, $tip, $mesaj);
 								$execval = $stmt->execute();
-								$result=$conn->execute_query("select id from users where email='$email' and activa=1;");
+								$result=$conn->execute_query("select id from users where email='$email';");
 								$row = $result->fetch_assoc();
 								echo "Inregistrare reusita...";
 								echo "Id-ul dumneavoastra este:#";
 								echo $row['id'];
-								echo "</p><p>Vă mulțumim pentru vizită și pentru interesul acordat!";
+								echo "</p><p class=\"center\">Vă mulțumim pentru mesaj!";
 								$stmt->close();
 							}
 							$verif->close();
@@ -59,7 +59,8 @@
 					}
 				?>
 			</p>
-			<input type="submit" value="Inapoi" onclick="javascript:history.back()">
+			<p class="center">
+			<input type="submit" value="Inapoi" onclick="javascript:history.back()"></p>
 		</div>
 	</body>
 </html>

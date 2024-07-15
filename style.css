@@ -10,10 +10,6 @@
     --imgborder-hover:#434b6e;
     --bgatractie:#c1c8d1;
     --border:#697079;
-
-    --accent1:#00ff22;
-    --accent2:rgb(21, 255, 0);
-    --accent3:#ff0000;
     --white:#fff;
     --glow:hsla(0, 0%, 100%, 0.75);
     --transparent1:#424855aa;
@@ -26,9 +22,7 @@ body{
     background-color: var(--bg1);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 p{
-  width: 100%;
   size: 18px;
   text-indent: 15px;
   margin: 10px 15px;
@@ -49,55 +43,7 @@ a.link:hover{
     color: var(--linkhover);
     filter: drop-shadow(0 0 5px var(--linkhover));
 }
-/* #container-text-img{
-    margin:0px 10px;
-    height: auto;
-}
-#container-text{
-    
-    margin:0px 10px;
-}
-#container-text-right{
-    
-    float:right;
-    display: block;
-    width:69%;
-    height:100%;
-}
-#container-text-right h2{
-    padding-left: 10px;
-    padding-right: 10px;
-    color: var(--text);
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 18px;
-    text-align: justify;
-}
-#container-text p, #container-text-right p{
-    padding-left: 10px;
-    padding-right: 10px;
-    color: var(--text);
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 14px;
-    text-align: justify;
-    text-indent: 20px;
-}
-#container-img{
-    
-    margin:0;
-    width:30%;
-    float:left;
-    height: 100%;
-}
-#container-img img{
-    border:2px solid var(--accent1);
-    border-radius:10px;
-    width:90%;
-    margin:10px 5%;
-    transition: all 1s ease;
-}
-#container-img img:hover{
-    border:2px solid var(--text);
-} /**/
+
 
 /* Atractie */
 
@@ -118,7 +64,6 @@ a.link:hover{
   margin: 10px 15px;
 }
 .atractie p{
-  width: 100%;
   size: 18px;
   text-indent: 15px;
   margin: 10px 15px;
@@ -141,35 +86,36 @@ a.link:hover{
 @media only screen and (max-width:1500px){
   .atractie{
     padding: 10px;
-    margin:5px 250px;
+    margin:15px 250px;
   }
 }
 @media only screen and (max-width:1250px){
   .atractie{
     padding: 10px;
-    margin:5px 100px;
+    margin:15px 100px;
   }
 }
 @media only screen and (max-width:900px) {
   .atractie{
-    padding: 0 10px;
-    margin:0px 10px;
+    border:none;
+    padding: 0px 10px;
+    margin:5px 10px;
     overflow: hidden;
     display: flexbox;
-    border: none;
     background: none;
     filter: none;
   }
   .atractie h2{
     text-decoration: underline;
     color:var(--text);
-    margin: 10px;
+    margin: 20px;
+    margin-bottom: 5px;
   }
   .atractie p{
     width: 100%;
     size: 18px;
     text-indent: 15px;
-    margin: 10px 0;
+    margin: 5px 25px;
     color:var(--text);
   }
   .atractie img{
@@ -191,160 +137,117 @@ a.link:hover{
 /* Nav */
 
 nav {
-    background-color: var(--nav);
-    height:150px;
-    width:100%;
-    align-content: center;
-    filter:drop-shadow(0 0 10px var(--nav));
+  background-color: var(--nav);
+  height:150px;
+  width:100%;
+  align-content: center;
+  filter:drop-shadow(0 0 10px var(--nav));
+}
+nav .logo{
+  line-height: 1600px;
+  height: 100px;
+  margin: 25 0 0 100px;
+  border-radius: 15px;
+  position:absolute;
+}
+nav ul{
+  float: right;
+  margin:0px 20px 0px 0px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 150px;
+  margin:0 75px;
+  transition:all 1s ease;
+}
+nav ul li a, a:visited{
+  color:var(--white);
+  font-size: 24px;
+  /*text-transform: uppercase;*/
+  border-radius: 5px;
+  text-decoration: none;
+  transition:all 1s ease;
+}
+nav li a:hover{
+  filter: drop-shadow(0 0 5px var(--glow));
+}
+nav .checkbtn{
+  font-size: 40px;
+  color: var(--white);
+  float:right;
+  margin: 25px 25px 0 0;
+  cursor: pointer;
+  display: none;
+  transition: all .5s ease;
+}
+#check{
+  display: none;
+}
+@media only screen and (max-width: 1500px){
+  nav ul li{
+    margin:0 45px;
+  }
+}
+@media only screen and (max-width: 1250px){
+  nav ul li{
+    margin:0 25px;
+  }
+}
+@media only screen and (max-width: 1000px){
+  nav ul li a, a:visited{
+    font-size: 16px;
   }
   nav .logo{
-    line-height: 1600px;
-    height: 100px;
-    margin: 25 0 0 100px;
-    border-radius: 15px;
-    position:absolute;
+      margin-left: 50px;
   }
-  nav ul{
-    float: right;
-    margin:0px 20px 0px 0px;
+}
+@media only screen and (max-width: 900px){
+  nav .logo{
+    margin-top: -18px;
   }
-  nav ul li{
-    display: inline-block;
-    line-height: 150px;
-    margin:0 75px;
-    transition:all 1s ease;
-  }
-  nav ul li a, a:visited{
-    color:var(--white);
-    font-size: 24px;
-    /*text-transform: uppercase;*/
-    border-radius: 5px;
-    text-decoration: none;
-    transition:all 1s ease;
-  }
-  nav li:not(li.selected) a:hover{
-    filter: drop-shadow(0 0 5px var(--glow));
+  nav{
+    position: relative;
   }
   nav .checkbtn{
-    font-size: 40px;
-    color: var(--white);
-    float:right;
-    margin: 25px 25px 0 0;
-    cursor: pointer;
-    display: none;
-    transition: all .5s ease;
-  }
-  #check{
-    display: none;
-  }
-  @media only screen and (max-width: 1500px){
-    nav ul li{
-      margin:0 45px;
-    }
-  }
-  @media only screen and (max-width: 1250px){
-    nav ul li{
-      margin:0 25px;
-    }
-  }
-  @media only screen and (max-width: 1000px){
-    nav ul li a, a:visited{
-      font-size: 16px;
-    }
-    nav .logo{
-        margin-left: 50px;
-    }
-  }
-  @media only screen and (max-width: 900px){
-    nav .logo{
-        margin-top: 0px;
-    }
-    nav{
-      position: relative;
-    }
-    nav .checkbtn{
-      display: block;
-    }
-    nav ul{
-      z-index: 2;
-      position: absolute;
-      width:100%;
-      top:150px;
-      left: -105%;
-      text-align: center;
-      transition: all .5s;
-      backdrop-filter: blur(5px);
-      background-color: var(--transparent1);
-      -moz-box-shadow: 5px 5px 15px rgba(0,0,0,.5);
-      -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,.5);
-      box-shadow: 4px 6px 15px rgba(0,0,0,.25);
-      clip-path: inset(0px -15px -15px 0px);
-    }
-    nav ul li{
-      display: block;
-      margin:50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background:none;
-    }
-    #check:checked ~ ul{
-      left:0;
-    }
-    #check:checked ~ nav{
-      filter:drop-shadow(0 0 50px var(--nav));
-    }
-    #check:checked ~ .checkbtn{
-      filter: drop-shadow(0 0 5px var(--glow));
-      z-index: 2;
-    }
-  }
-
-/* #container-element{
-    overflow: hidden;
-    margin:0px 10px;
-    height: auto;
     display: block;
-    align-items: center;
-    justify-content: center;
-}
-.element{
-    float:left;
-    margin: 15px 15px;
-    border: 2px solid var(--accent1);
-    background-color: var(--bg2);
-    border-radius: 10px;
-    width:410px;
-    height:410px;
-}
-.element a img{
-    border:2px solid var(--bg2);
-    border-radius: 130px;
-    margin: 10px 75px;
-    width:250px;
-    height:250px;
-    padding: 5px;
-    transition: all 1.25s ease-in-out;
-}
-.element a:hover img{
-    border:2px solid var(--accent3);
-}
-.element h2{
-    color:var(--text);
+  }
+  nav ul{
+    z-index: 2;
+    position: absolute;
+    width:100%;
+    top:150px;
+    left: -105%;
     text-align: center;
-    font-size: 18px;
+    transition: all .5s;
+    backdrop-filter: blur(5px);
+    background-color: var(--transparent1);
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,.5);
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,.5);
+    box-shadow: 4px 6px 15px rgba(0,0,0,.25);
+    clip-path: inset(0px -15px -15px 0px);
+  }
+  nav ul li{
+    display: block;
+    margin:50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background:none;
+  }
+  #check:checked ~ ul{
+    left:0;
+  }
+  #check:checked ~ nav{
+    filter:drop-shadow(0 0 50px var(--nav));
+  }
+  #check:checked ~ .checkbtn{
+    filter: drop-shadow(0 0 5px var(--glow));
+    z-index: 2;
+  }
 }
-.element p{
-    padding-left: 15px;
-    padding-right: 15px;
-    color: var(--text);
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 12px;
-    text-align: center;
-}*/
 .formular{
     align-items: center;
     justify-content: center;
@@ -361,19 +264,19 @@ nav {
 @media only screen and (max-width:1500px){
   .formular{
     padding: 10px;
-    margin:5px 250px;
+    margin:15px 250px;
   }
 }
 @media only screen and (max-width:1250px){
   .formular{
     padding: 10px;
-    margin:5px 100px;
+    margin:15px 100px;
   }
 }
 @media only screen and (max-width:900px) {
   .formular{
     padding: 10px 10px;
-    margin:0px 10px;
+    margin:10px 10px;
     overflow: hidden;
     display: flexbox;
     border: none;
@@ -440,25 +343,28 @@ nav {
 @media only screen and (max-width:1500px){
   .continut{
     padding: 10px;
-    margin:5px 250px;
+    margin:15px 250px;
   }
 }
 @media only screen and (max-width:1250px){
   .continut{
     padding: 10px;
-    margin:5px 100px;
+    margin:15px 100px;
   }
 }
 @media only screen and (max-width:900px) {
   .continut{
     padding: 0 10px;
-    margin:0px 10px;
+    margin:10px 10px 0 20px;
     overflow: hidden;
     display: flexbox;
     border: none;
     background: none;
     filter: none;
   }
+}
+.continut p{
+  margin: 10px 15px;
 }
 p.center{
   padding: 0;
@@ -518,9 +424,20 @@ iframe.map{
     border: 3px solid var(--imgborder);
     border-radius: 15px;
     width: 100%;
+    aspect-ratio: 16/9;
     height: auto;
     min-height: 400px;
     transition: all .75s ease-in-out;
+}
+@media only screen and (max-width:900px) {
+  iframe.map{
+    border: 3px solid var(--imgborder);
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    transition: all .75s ease-in-out;
+}
 }
 iframe.map:hover{
   border: 3px solid var(--imgborder-hover);

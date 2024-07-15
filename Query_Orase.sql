@@ -358,6 +358,6 @@ ALTER TABLE orase AUTO_INCREMENT=1;
 
 ALTER TABLE users AUTO_INCREMENT=1;
 
-DELETE from orase;
+DELETE from users;
 
 SELECT * from users;
